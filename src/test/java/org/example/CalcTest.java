@@ -35,7 +35,7 @@ class CalcTest {
     void summ1() {
         Calc calc = new Calc();
         int result = calc.summ(1, 6);
-        Assertions.assertEquals(7, result, "Не тот ответ");
+        assertEquals(7, result,"Не тот ответ");
     }
 
     @RepeatedTest(10)
@@ -45,7 +45,7 @@ class CalcTest {
     void summ2() {
         Calc calc = new Calc();
         int result = calc.summ(1, 6);
-        Assertions.assertEquals(7, result, "Не тот ответ");
+        assertEquals(7, result,"Не тот ответ");
     }
 
     @ParameterizedTest(name = "#{index} - сложение {0} и {1}, ожидаем {2}")
@@ -55,7 +55,7 @@ class CalcTest {
     void summ3(int a, int b, int expectedResult) {
         Calc calc = new Calc();
         int result = calc.summ(a, b);
-        Assertions.assertEquals(expectedResult, result, "Не тот ответ");
+        assertEquals(expectedResult, result,"Не тот ответ");
 
     }
 
@@ -66,7 +66,7 @@ class CalcTest {
     void diff1() {
         Calc calc = new Calc();
         int result = calc.diff(10, 6);
-        Assertions.assertEquals(4, result, "Не тот ответ");
+       assertEquals(4, result, "Не тот ответ");
     }
 
     @RepeatedTest(10)
@@ -76,6 +76,6 @@ class CalcTest {
     void diff2() {
         Calc calc = new Calc();
         int result = calc.diff(3, 3);
-        Assertions.assertEquals(0, result, "Не тот ответ");
+        assertEquals(0, result, "Не тот ответ");
     }
 }

@@ -6,5 +6,5 @@ import org.junit.platform.suite.api.Suite;
 @Suite
 @SelectPackages("org.example")
 @IncludeTags("SUMM")
-public class TestSuitSumm {
+public class TestSuiteSumm {
 }
